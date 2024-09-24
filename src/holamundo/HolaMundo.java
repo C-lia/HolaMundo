@@ -1,10 +1,20 @@
 package holamundo;
 
+import java.util.Scanner;
 import Ejercicios.Calculadora;
 import Ejercicios.Formulas;
 
+
 public class HolaMundo {
     public static void main(String[] args) {
+        
+        Scanner consola = new Scanner(System.in);
+        
+        System.out.println("Escribe un numero");
+        int edad = consola.nextInt();
+        System.out.println( "Tu edad es " + edad);
+        
+        
         System.out.println("Hola Mundo!!");
         
         Calculadora calculadora = new Calculadora(5, 4);
